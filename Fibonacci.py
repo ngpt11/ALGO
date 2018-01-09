@@ -4,17 +4,16 @@ Created on Mon Jan  8 22:20:19 2018
 
 @author: naman
 """
-
+# using simple technique for creating Fibonacci. Has exponential time complexity.
 def fib(n):
     if(n==0 or n ==1):
         return n;
     else:
         return fib(n-1) + fib(n-2);
-    
 
 print(fib(6)); 
 
-
+# using array to store intermediate  results 
 farray= []; 
 def fibarray(n):
     farray= [0,1];
