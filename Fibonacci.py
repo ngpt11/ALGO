@@ -21,13 +21,8 @@ def fibarray(n):
         if (i==0 or i==1):
             continue;
         else:
-            #print(i);
-            #farray[i] = farray[i-1] + farray[i-2];
             c= farray[i-1] + farray[i-2];
-            farray.append(c);
-            #print(farray.index(c));
-    return farray[n];
-            
-            #return farray[i];
+            farray.append(c);      
+    return farray[n];       # return of function is required else function return none.
 
 print(fibarray(6));
